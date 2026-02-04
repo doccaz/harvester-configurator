@@ -1,10 +1,20 @@
-# harvester-configurator.github.io
-An interactive editor to create and validate Harvester installation config files in an easy way (tm).
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-## About Harvester 
-Harvester is a modern hyperconverged infrastructure (HCI) solution built for bare metal servers using enterprise-grade open-source technologies including Linux, KVM, Kubernetes, KubeVirt, and Longhorn. Designed for users looking for a flexible and affordable solution to run cloud-native and virtual machine (VM) workloads in your datacenter and at the edge, Harvester provides a single pane of glass for virtualization and cloud-native workload management.
+# Run and deploy your AI Studio app
 
-Find out more at https://harvesterhci.io
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/drive/1iD9E48u75ijbAy7p5H1sNhqWHILgSyFC
+
+## Run Locally
+
+**Prerequisites:**  Node.js
 
 
-## See it in action at https://doccaz.github.io/harvester-configurator !
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
