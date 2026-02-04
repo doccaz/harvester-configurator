@@ -1,20 +1,53 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Harvester Automated Install Configurator
 
-# Run and deploy your AI Studio app
+An interactive web application designed to generate, validate, and manage **Harvester HCI** configuration files (YAML) for automated installations.
 
-This contains everything you need to run your app locally.
+### 🚀 **[See it in action here](https://doccaz.github.io/harvester-configurator)**
 
-View your app in AI Studio: https://ai.studio/apps/drive/1iD9E48u75ijbAy7p5H1sNhqWHILgSyFC
+---
 
-## Run Locally
+## Overview
 
-**Prerequisites:**  Node.js
+Harvester uses cloud-init style YAML configuration files to automate the node installation process (commonly used with PXE boot or custom ISOs). Manually writing these files can be error-prone and often requires cross-referencing documentation.
 
+This tool simplifies the process by providing a guided UI to:
+*   **Create** compliant configuration files for Harvester v1.7+.
+*   **Validate** essential settings (Tokens, VIPs, Interfaces) in real-time.
+*   **Configure** complex networking (Bonding modes, VLANs, MTU).
+*   **Manage** storage multipath rules (Blacklisting/Exceptions by Attribute or WWID).
+*   **Export** ready-to-use YAML files for your infrastructure.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Key Features
+
+*   **Installation Modes**: Seamlessly switch between creating a new cluster (VIP/DHCP) or joining an existing one.
+*   **Network Configuration**: Visual builder for Management interfaces, Bonding options (active-backup, balance-tlb, LACP, etc.), and Static vs. DHCP IP settings.
+*   **OS Customization**: Configure SSH keys, Root passwords, NTP servers, DNS, and Kernel modules.
+*   **External Storage**: dedicated UI for configuring Multipath blacklists and exceptions to handle specific storage devices.
+*   **YAML Preview**: View the generated YAML in real-time, with options to exclude empty sections for cleaner output.
+*   **Import/Export**: Load existing YAML files to edit them or save your configuration for later use.
+
+## Development
+
+To run this project locally:
+
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+2.  **Start the development server:**
+    ```bash
+    npm start
+    ```
+
+3.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## License
+
+MIT
+
+---
+*Built for the Harvester Community.*
