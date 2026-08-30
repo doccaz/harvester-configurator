@@ -5,7 +5,7 @@ import { HarvesterConfig, DEFAULT_CONFIG, ValidationResult } from './types';
 import Tooltip from './components/Tooltip';
 import CodeBlock from './components/CodeBlock';
 
-const APP_VERSION = "v1.4.0-stable";
+const APP_VERSION = "v1.4.3-stable";
 const GITHUB_URL = "https://github.com/doccaz/harvester-configurator";
 const HARVESTER_LOGO_URL = "https://harvesterhci.io/img/logo_horizontal.svg";
 
@@ -1197,7 +1197,7 @@ export default function App() {
   );
 
   return (
-    <div className="bg-black min-h-screen text-gray-300 font-sans relative">
+    <div className="bg-gray-950 min-h-screen text-gray-300 font-sans relative">
       <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="absolute top-0 right-0 z-50 pointer-events-auto">
          <div className="relative overflow-hidden w-24 h-24">
            <div className="absolute top-0 right-0 w-[150%] h-[30px] bg-gray-800 text-white flex items-center justify-center text-[10px] font-bold uppercase tracking-wider shadow-lg transform translate-x-[30%] translate-y-[50%] rotate-45 border-b border-gray-700 hover:bg-gray-700 transition-colors">
@@ -1260,9 +1260,9 @@ const InputGroup = ({ label, children, required = false, value, helpText, toolti
       <div className={`relative rounded-lg transition-all duration-200 ${isFilled ? 'ring-1 ring-gray-600 bg-gray-900' : ''}`}>{children}</div>
       {helpText && <p className="text-xs text-gray-600 mt-1 ml-1">{helpText}</p>}
       <style>{`
-        .input-field { width: 100%; background-color: #09090b; border: 1px solid #27272a; color: white; padding: 0.5rem 0.75rem; border-radius: 0.5rem; font-size: 0.875rem; outline: none; transition: border-color 0.15s ease-in-out; }
-        .input-field::placeholder { color: #52525b; opacity: 0.6; }
-        .input-field:focus { border-color: #22c55e; ring: 1px solid #22c55e; }
+        .input-field { width: 100%; background-color: #0C322C; border: 1px solid #1A453C; color: white; padding: 0.5rem 0.75rem; border-radius: 0.5rem; font-size: 0.875rem; outline: none; transition: border-color 0.15s ease-in-out; }
+        .input-field::placeholder { color: #517566; opacity: 0.6; }
+        .input-field:focus { border-color: #30BA78; ring: 1px solid #30BA78; }
       `}</style>
     </div>
   );
