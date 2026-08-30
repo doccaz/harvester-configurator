@@ -47,7 +47,7 @@ To run this project locally:
 
 ## License
 
-MIT
+GPLv3
 
 ---
 *Built for the Harvester Community.*
